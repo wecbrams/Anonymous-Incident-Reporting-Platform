@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity ^0.5.16;
+
+pragma solidity >= 0.7.0 < 0.9.0;
 
 contract AnonymousIncidentReporting {
     // Struct to represent an incident report
@@ -32,7 +33,7 @@ contract AnonymousIncidentReporting {
 
         // Create a new incident report
         uint256 reportId = incidentReports.length;
-        incidentReports.push(Report(reportId, msg.sender, _message, now, false));
+        incidentReports.push(Report(reportId, msg.sender, _message, block.timestamp, false));
 
         // Mark reporter as having submitted a report
         hasReported[msg.sender] = true;
