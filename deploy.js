@@ -1,5 +1,5 @@
 // deploy.js
-const contract = require('./AnonymousIncidentReporting.json'); // Make sure to compile your smart contract first
+const contract = require('./artifacts/AnonymousIncidentReporting.json'); // Make sure to compile your smart contract first
 const kit = require('@celo/contractkit');
 
 // Function to deploy the smart contract
