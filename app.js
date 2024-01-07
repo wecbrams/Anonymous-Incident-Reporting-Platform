@@ -6,7 +6,7 @@ const kitInstance = kit.newKit('https://alfajores-forno.celo-testnet.org');
 kitInstance.addAccount(process.env.PRIVATE_KEY);
 
 // Get the deployed contract instance
-const incidentReportingContract = new kitInstance.web3.eth.Contract(contract.abi, '0x1234567890123456789012345678901234567890'); // Replace with your contract address
+const incidentReportingContract = new kitInstance.web3.eth.Contract(contract.abi, '0xd9145CCE52D386f254917e481eB44e9943F39138'); // Replace with your contract address
 
 // Function to submit an incident report
 async function submitIncidentReport() {
